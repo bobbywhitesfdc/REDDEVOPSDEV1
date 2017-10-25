@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Settings specific to the ChatterArchive application package</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>edynamics__Admin_Email__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Administrative email address for notifications</inlineHelpText>
+        <label>Admin Email</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>edynamics__CustomerLogo__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>CustomerLogo</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>edynamics__Disable_Triggers__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A comma separated string of triggers that are disabled for the instance.  Supported triggers: FeedCommentAfter, FeedItemAfter, UserStatusBefore</description>
+        <externalId>false</externalId>
+        <label>Disable Triggers</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>edynamics__Disclaimer__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Disclaimer</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>edynamics__EnableGroup__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, enables the app to function only for the group name specified.</description>
+        <externalId>false</externalId>
+        <label>EnableGroup</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>edynamics__GroupName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If enable group is checked you must specify a group name here.</description>
+        <externalId>false</externalId>
+        <label>GroupName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>edynamics__Include_File_Attachments__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>When checked, file attachments from Chatter posts will be included in compliance email (if uploaded to Chatter post by user)</inlineHelpText>
+        <label>Include File Attachments</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>edynamics__Journaling_Email__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Journaling email address, as defined by the client, for ChatterArchive</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter your journaling address (where you want ChatterArchive to send email to)</inlineHelpText>
+        <label>Journaling Email</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>edynamics__SendEmail__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, email to journaling mailbox functionality is enabled</inlineHelpText>
+        <label>Send Email?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>edynamics__SubjectSuffix__c</fullName>
+        <deprecated>false</deprecated>
+        <description>When set, AFC adds this field to the end of the subject of each journaling email</description>
+        <externalId>false</externalId>
+        <label>Subject Suffix</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>edynamics__Write_to_Custom_Object__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, Archive for Chatter will write a copy of each chatter post/comment to custom SFDC object for reporting purposes.</inlineHelpText>
+        <label>Write to Custom Object?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Chatter Archive Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>
